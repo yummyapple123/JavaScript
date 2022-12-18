@@ -1,17 +1,42 @@
 # JavaScript
-//Function declaration, allows calling the function before the declaration
+//CHALLENGE 1
+// const avg = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const avgDolphins = avg(44, 23, 71);
 
-function calcAge1(birthyear) {
-  return 2037 - birthyear;
-}
+// const avgKoalas = avg(65, 54, 49);
+// // checkWinner
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins > avgKoalas * 2) {
+//     console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+//   } else if (avgKoalas > avgDolphins * 2) {
+//     console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+//   } else {
+//     console.log("No one wins!");
+//   }
+// }
 
-const age1 = calcAge1(1993);
-console.log(age1);
+// console.log(checkWinner(avgDolphins, avgKoalas));
 
-//function expression, not allows calling the function before the expression
-//an expression produces a value
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+// solution
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`Dolphins win the 🏆. ${avgDolphins} vs. ${avgKoalas}`);
+  } else if (avgKoalas > avgDolphins * 2) {
+    console.log(`Koalas win the 🏆. ${avgKoalas} vs. ${avgDolphins}`);
+  } else {
+    console.log("No one wins");
+  }
 };
-const age2 = calcAge2(1993);
-console.log(age1, age2);
+checkWinner(scoreDolphins, scoreDolphins);
+checkWinner(576, 111);
+
+//test data 2
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
