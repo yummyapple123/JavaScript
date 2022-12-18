@@ -1,17 +1,13 @@
 # JavaScript
-//Function declaration, allows calling the function before the declaration
+//Arrow function
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1993);
+console.log(age3);
 
-function calcAge1(birthyear) {
-  return 2037 - birthyear;
-}
-
-const age1 = calcAge1(1993);
-console.log(age1);
-
-//function expression, not allows calling the function before the expression
-//an expression produces a value
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
 };
-const age2 = calcAge2(1993);
-console.log(age1, age2);
+console.log(yearsUntilRetirement(1993, "Jennie"));
