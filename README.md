@@ -18,3 +18,5 @@ const jonas = {
 console.log(jonas);
 //Dot notation
 console.log(jonas.lastName); //print out last name
+//bracket notation
+console.log(jonas["lastName"]);
