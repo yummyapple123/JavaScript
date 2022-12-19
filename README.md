@@ -52,3 +52,26 @@ console.log(
 console.log(
   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 );
+
+
+/* Object Method with 'this' keyword */
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriverLIcense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
+};
+
+console.log(jonas.calcAge());
+// console.log(jonas["calcAge"](1991));
+
