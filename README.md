@@ -1,17 +1,17 @@
 # JavaScript
-//Function declaration, allows calling the function before the declaration
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
 
-function calcAge1(birthyear) {
-  return 2037 - birthyear;
-}
-
-const age1 = calcAge1(1993);
-console.log(age1);
-
-//function expression, not allows calling the function before the expression
-//an expression produces a value
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+//object jonas has 5 properties, 5 keys with values
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
-const age2 = calcAge2(1993);
-console.log(age1, age2);
