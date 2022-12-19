@@ -15,3 +15,6 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
 };
+console.log(jonas);
+//Dot notation
+console.log(jonas.lastName); //print out last name
