@@ -1,17 +1,8 @@
 # JavaScript
-//Function declaration, allows calling the function before the declaration
-
-function calcAge1(birthyear) {
-  return 2037 - birthyear;
-}
-
-const age1 = calcAge1(1993);
-console.log(age1);
-
-//function expression, not allows calling the function before the expression
-//an expression produces a value
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
-const age2 = calcAge2(1993);
-console.log(age1, age2);
+const bills = [125, 553, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
