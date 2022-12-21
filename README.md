@@ -80,5 +80,5 @@ console.log(jonas.calcAge());
 //print a sentence 10 times
 console.log("lifting weights repitition 1 😀");
 for (let i = 1; i <= 10; i++) {
-  console.log("hello there");
+ console.log(`printing from ${i}`);
 }
