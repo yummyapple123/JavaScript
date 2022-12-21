@@ -75,3 +75,10 @@ const jonas = {
 console.log(jonas.calcAge());
 // console.log(jonas["calcAge"](1991));
 
+
+//THE FOR LOOP
+//print a sentence 10 times
+console.log("lifting weights repitition 1 😀");
+for (let i = 1; i <= 10; i++) {
+  console.log("hello there");
+}
